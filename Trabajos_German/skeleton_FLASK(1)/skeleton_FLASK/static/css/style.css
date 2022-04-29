@@ -1,0 +1,17 @@
+h1{
+    color: rgb(127, 161, 255);
+}
+
+img{
+    padding: 50px;
+    margin: 40px;
+    
+}
+div{
+    color: rgb(255, 0, 200);
+    padding: 100px;
+}
+
+nav{
+    color: blue;
+}

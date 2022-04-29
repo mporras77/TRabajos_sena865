@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/images/viajes.png">
+    <script src="https://kit.fontawesome.com/5622729745.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css":>
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <title>Ayuda</title>
+    
+    
+  </head>
+<body>
+  
+    <header>
+        
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="./static/images/icono-menu.png" width="30px" alt=""></label>
+            <nav class="menu">
+                <div id="header">
+                    <ul class="nav">
+                        <ul class="nav">
+                            <li><a href="/inicio">Inicio</a></li>
+                            <li><a href="/lugares">Lugares</a></li>
+                            <li><a href="/reservas">Reservas</a></li>
+                            <li><a href="/registro">Registro</a></li>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/perfil">Perfil</a>
+                                <ul>
+                                    <li><a href="/ayuda">Ayuda</a></li>
+                                    <li><a href="/cerrarsesion">Salir</a></li>
+                                </ul>
+                            </li>
+                        </u>
+                    </div>
+             
+               </nav>      
+                     
+        </header>
+    
+        <main>
+        <form class="cont", method="POST" action="/help">
+            <div class="content">
+
+                <h1 class="logo"><span>contactanos</span></h1>
+        
+                <div class="contact-wrapper animated bounceInUp">
+                    <div class="contact-form">
+                        <h3>contactanos</h3>
+                        <form  action="/sugerecias">
+                            <p class="block">
+                                <label>Nombre Completo</label>
+                                <input  type="text" name="numero3">
+                            </p>
+                            <p class="block">
+                                <label>Correo Usuario</label>
+                                <input type="email" name="numero1"> 
+                            </p>
+                            <p class="block">
+                                <label>Telefono</label>
+                                <input type="phone" name="numero4"> 
+                            </p>
+                            <p class="block">
+                                <label>razon</label>
+                                <input type="tex" name="numero7">
+                            </p>
+                            <p class="block">
+                               <label>mensaje</label> 
+
+                                <textarea type="tex" name="numero8" rows="3"></textarea>
+                            </p>
+                            <p class="block">
+                                <button>
+                                    Enviar  
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Mas información</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Coffee Region</li>
+                            <li><i class="fas fa-phone"></i>+57 3003294838</li>
+                            <li><i class="fas fa-envelope-open-text">gomeloslos8@gmail.com</i></li>
+                        </ul>
+                        <p>si tiene dudas de nuestro servicio. Puede contactenos para mas información sino por favor escribir a nuestro Correo y esperar respuesta</p>
+                        <p>coffeeregion.com</p>
+                    </div>
+                </div>
+        
+            </div>
+        
+ </body>
+</html>

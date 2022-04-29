@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    background-color: #2ce6ff;
+    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(/static/images/miradores.jpg);
+    background-size: cover;
+    background-attachment: fixed ;
+}
+header{
+  margin:auto;
+  width: 500px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #2ce6ff;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid red;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #000000;
+    text-decoration: none;
+}
+main{
+    padding: 20px;
+}
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background:#2ce6ff;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+        
+    }
+    
+
+}
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style:none;
+}
+.nav li a{
+    background-color: #2ce6ff;
+    color: #000000;
+    text-decoration:none;
+    padding:10px 15px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: #434343;
+}
+.nav >li {
+    float:left
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    max-width: 140px;
+}
+.nav li:hover >ul {
+    display:block;
+}
+.nav li ul li{
+    position:relative;
+}
+.nav li ul li ul{
+    right:-140px;
+    top:0px
+}
+h1{
+    width: 45px;
+}
+.contenedor{
+    width: 90%;
+    padding: 0%;
+    text-align: center;
+    color: #1a2537;
+    font-size: 20px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 150px;
+    margin: 0 auto;
+    width: 40%;
+    height: 20%;
+    padding: 3px;
+}
+
+input[type="text"],
+input[type="password"]{
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+
+}
+.icon{
+    
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    background: #00e1ff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+
+}
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+    color: cadetblue;
+}
+@media (man-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
